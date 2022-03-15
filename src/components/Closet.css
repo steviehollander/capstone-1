@@ -1,0 +1,22 @@
+.pieceImg {
+    width: 150px
+
+
+}
+
+
+.items {
+    border: 3px solid goldenrod;
+    width: fit-content;
+    
+}
+
+
+.purchaseLinkage {
+    color: rgb(101, 165, 29);
+}
+
+
+.closetHeader {
+    text-align: center;
+}
