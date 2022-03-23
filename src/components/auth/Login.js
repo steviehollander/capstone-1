@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react"
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom"
 import "./Login.css"
+import LogoImg from "../../images/AppLogo.jpg"
 
 
 export const Login = () => {
@@ -21,7 +22,7 @@ export const Login = () => {
             .then(exists => {
                 if (exists) {
                     localStorage.setItem("cm_user", exists.id)
-                    history.push("/")
+                    history.push("/home")
                 } else {
                     existDialog.current.showModal()
                 }
@@ -37,21 +38,24 @@ export const Login = () => {
 
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
-                    <h1>Clothes-Minded</h1>
-                    <h2>Please sign in</h2>
-                    <fieldset>
-                        <label htmlFor="inputEmail"> Email address </label>
+                    <img class="logo" src={LogoImg} alt="" />
+                    <h2 className="signin">Please sign in</h2>
+                    <div className="signIn">
+
+                        <label htmlFor="inputEmail"> Email address: </label>
                         <input type="email"
                             onChange={evt => set(evt.target.value)}
                             className="form-control"
                             placeholder="Email address"
                             required autoFocus />
-                    </fieldset>
-                    <fieldset>
-                        <button type="submit">
-                            Sign in
-                        </button>
-                    </fieldset>
+                    </div>
+
+                    <br />
+                    <button className="loginSubmitButton" type="submit">
+                        Sign in
+                    </button>
+
+
                 </form>
             </section>
             <section className="link--register">

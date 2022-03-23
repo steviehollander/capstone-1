@@ -4,6 +4,7 @@ import { AddPiece } from "./AddPiece"
 import { PieceListOne } from "./Closet"
 import { DreamCloset } from "./DreamCloset"
 import { EditPiece } from "./EditPiece"
+import { HomePage } from "./Home"
 import { WorldCloset } from "./WorldCloset"
 
 
@@ -28,6 +29,9 @@ export const ApplicationViews = () => {
             </Route>
             <Route path="/worldCloset">
                 <WorldCloset />
+            </Route>
+            <Route path="/home">
+                <HomePage />
             </Route>
 
 

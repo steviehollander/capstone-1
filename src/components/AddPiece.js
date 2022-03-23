@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { useHistory } from "react-router-dom";
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
-
+import "./AddPiece.css"
 
 export const AddPiece = () => {
     const { closetId } = useParams()
@@ -92,114 +92,118 @@ export const AddPiece = () => {
 
 
     return (
-        <form className="addPieceForm">
-            <h2 className="addPieceForm__title">Add Item</h2>
-            <fieldset>
-                <div className="form-group">
-                    <label htmlFor="description">Item Picture:</label>
-                    <input
-                        onChange={
-                            (evt) => {
-                                const copy = { ...piece }
-                                copy.imgAddress = evt.target.value
-                                setPiece(copy)
+
+        <div className="AddPieceContainer">
+            <form className="addPieceForm">
+                <h2 className="addPieceForm__title">Add Item</h2>
+                <fieldset className="registerSec1">
+                    <div className="form-group">
+                        <label htmlFor="description">Item Picture:</label>
+                        <input
+                            onChange={
+                                (evt) => {
+                                    const copy = { ...piece }
+                                    copy.imgAddress = evt.target.value
+                                    setPiece(copy)
+                                }
                             }
-                        }
-                        required autoFocus
-                        type="text"
-                        className="form-control"
-                        placeholder="Image Address?"
-                    />
-                </div>
-            </fieldset>
+                            required autoFocus
+                            type="text"
+                            className="form-control"
+                            placeholder="Image Address?"
+                        />
+                    </div>
+                </fieldset>
 
-            <fieldset>
-                <div className="form-group">
-                    <label htmlFor="description">Brand:</label>
-                    <input
-                        onChange={
-                            (evt) => {
-                                const copy = { ...piece }
-                                copy.brand = evt.target.value
-                                setPiece(copy)
+                <fieldset className="registerSec">
+                    <div className="form-group">
+                        <label htmlFor="description">Brand:</label>
+                        <input
+                            onChange={
+                                (evt) => {
+                                    const copy = { ...piece }
+                                    copy.brand = evt.target.value
+                                    setPiece(copy)
+                                }
                             }
-                        }
-                        required autoFocus
-                        type="text"
-                        className="form-control"
+                            required autoFocus
+                            type="text"
+                            className="form-control"
 
-                    />
-                </div>
+                        />
+                    </div>
 
-            </fieldset>
-            <fieldset>
-                <div className="form-group">
-                    <label htmlFor="description">Price:</label>
-                    <input
-                        onChange={
-                            (evt) => {
-                                const copy = { ...piece }
-                                copy.price = evt.target.value
-                                setPiece(copy)
+                </fieldset>
+                <fieldset className="registerSec">
+                    <div className="form-group">
+                        <label htmlFor="description">Price:</label>
+                        <input
+                            onChange={
+                                (evt) => {
+                                    const copy = { ...piece }
+                                    copy.price = evt.target.value
+                                    setPiece(copy)
+                                }
                             }
-                        }
-                        required autoFocus
-                        type="text"
-                        className="form-control"
+                            required autoFocus
+                            type="text"
+                            className="form-control"
 
-                    />
-                </div>
+                        />
+                    </div>
 
-            </fieldset>
-            <fieldset>
-                <div className="form-group">
-                    <label htmlFor="description">Purchase Link:</label>
-                    <input
-                        onChange={
-                            (evt) => {
-                                const copy = { ...piece }
-                                copy.purchaseLink = evt.target.value
-                                setPiece(copy)
+                </fieldset>
+                <fieldset className="registerSec">
+                    <div className="form-group">
+                        <label htmlFor="description">Purchase Link:</label>
+                        <input
+                            onChange={
+                                (evt) => {
+                                    const copy = { ...piece }
+                                    copy.purchaseLink = evt.target.value
+                                    setPiece(copy)
+                                }
                             }
-                        }
-                        required autoFocus
-                        type="text"
-                        className="form-control"
+                            required autoFocus
+                            type="text"
+                            className="form-control"
 
-                    />
+                        />
+                    </div>
+
+                </fieldset>
+                <fieldset className="registerSec">
+                    <div className="form-group">
+                        <label htmlFor="pieceType">Type</label>
+                        <select
+                            required autoFocus
+                            type="text"
+                            className="form-control"
+                            onChange={
+                                (evt) => {
+                                    const copy = { ...piece }
+                                    copy.pieceTypeId = evt.target.value
+                                    setPiece(copy)
+                                }
+
+                            }>
+                            <option value="0">Item Category...</option>
+                            {types.map(pieceType => <option value={pieceType.id}>{pieceType.type}</option>)}
+                        </select>
+
+
+
+
+                    </div>
+                </fieldset>
+
+
+                <div className="wrap">
+                    <button className="button" onClick={AddNewPiece} className="btn btn-primary">
+                        Add to Closet!
+                    </button>
                 </div>
-
-            </fieldset>
-            <fieldset>
-                <div className="form-group">
-                    <label htmlFor="pieceType">Type</label>
-                    <select
-                        required autoFocus
-                        type="text"
-                        className="form-control"
-                        onChange={
-                            (evt) => {
-                                const copy = { ...piece }
-                                copy.pieceTypeId = evt.target.value
-                                setPiece(copy)
-                            }
-
-                        }>
-                        <option value="0">Item Category...</option>
-                        {types.map(pieceType => <option value={pieceType.id}>{pieceType.type}</option>)}
-                    </select>
-
-
-
-
-                </div>
-            </fieldset>
-
-
-
-            <button onClick={AddNewPiece} className="btn btn-primary">
-                Add to Closet!
-            </button>
-        </form>
+            </form>
+        </div>
     )
 }

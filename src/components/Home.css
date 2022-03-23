@@ -1,0 +1,35 @@
+.HomeLinks {
+    width: 200px;
+    margin-top: 50px;
+    text-decoration: none;
+    transition: transform .2s;
+    display: grid;
+    place-items: center;
+    padding: 40px;
+    
+   
+}
+
+.HomeLinkYas {
+    text-decoration: none;
+    
+}
+
+.HomeLinks:hover {
+    transform: scale(2);
+
+}
+
+
+
+
+.homeLinkContainer {
+    display:grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    grid-gap: 10px;
+    padding: 30px;
+}
+
+
+

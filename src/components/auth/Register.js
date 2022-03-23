@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react"
 import { useHistory } from "react-router-dom"
-import "./Login.css"
+import "./Register.css"
+import LogoImg from "../../images/ClosetCase.jpg"
 
 export const Register = (props) => {
     const [user, setUser] = useState({})
@@ -59,30 +60,36 @@ export const Register = (props) => {
 
 
     return (
-        <main style={{ textAlign: "center" }}>
-            <dialog className="dialog dialog--password" ref={conflictDialog}>
-                <div>Account with that email address already exists</div>
-                <button className="button--close" onClick={e => conflictDialog.current.close()}>Close</button>
-            </dialog>
 
-            <form className="form--login" onSubmit={handleRegister}>
-                <h1 className="h3 mb-3 font-weight-normal">Become a Closet Case!</h1>
-                <fieldset>
-                    <label htmlFor="name"> Full Name </label>
-                    <input onChange={updateUser}
-                        type="text" id="name" className="form-control"
-                        placeholder="Enter your name" required autoFocus />
-                </fieldset>
+        <div className="registerJush">
+            <main style={{ textAlign: "center" }}>
+                <dialog className="dialog dialog--password" ref={conflictDialog}>
+                    <div>Account with that email address already exists</div>
+                    <button className="button--close" onClick={e => conflictDialog.current.close()}>Close</button>
+                </dialog>
 
-                <fieldset>
-                    <label htmlFor="email"> Email address </label>
-                    <input onChange={updateUser} type="email" id="email" className="form-control" placeholder="Email address" required />
-                </fieldset>
-                <fieldset>
-                    <button type="submit"> Register </button>
-                </fieldset>
-            </form>
-        </main>
+                <form className="form--login" onSubmit={handleRegister}>
+                    <img class="registerlogo" src={LogoImg} alt="" />
+                    <br />
+                    <div className="registerName">
+                        <label htmlFor="name"> Full Name: </label>
+                        <input onChange={updateUser}
+                            type="text" id="name" className="form-control"
+                            placeholder="Enter your name" required autoFocus />
+                    </div>
+                    <br />
+
+
+                    <div className="registerEmail">
+                        <label htmlFor="email"> Email address: </label>
+                        <input onChange={updateUser} type="email" id="email" className="form-control" placeholder="Email address" required />
+                    </div>
+                    <br />
+                    <button className="submitButton2" type="submit"> Register </button>
+
+                </form>
+            </main>
+        </div >
     )
 }
 

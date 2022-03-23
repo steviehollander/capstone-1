@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { useHistory, useParams } from "react-router-dom";
+import "./EditPiece.css"
 
 
 
@@ -92,119 +93,123 @@ export const EditPiece = () => {
 
 
     return (
-        <form className="addPieceForm">
-            <h2 className="addPieceForm__title">Add Item</h2>
-            <fieldset>
-                <div className="form-group">
-                    <label htmlFor="description">Item Picture:</label>
-                    <input
-                        value={piece.imgAddress}
-                        onChange={
-                            (evt) => {
-                                const copy = { ...piece }
-                                copy.imgAddress = evt.target.value
-                                setPiece(copy)
+
+        <div className="editPieceContainer">
+            <form className="addPieceForm">
+                <h2 className="addPieceForm__title">Edit Item</h2>
+                <fieldset className="registerSec1">
+                    <div className="form-group">
+                        <label htmlFor="description">Item Picture:</label>
+                        <input
+                            value={piece.imgAddress}
+                            onChange={
+                                (evt) => {
+                                    const copy = { ...piece }
+                                    copy.imgAddress = evt.target.value
+                                    setPiece(copy)
+                                }
                             }
-                        }
-                        required autoFocus
-                        type="text"
-                        className="form-control"
-                        placeholder="Image Address?"
-                    />
-                </div>
-            </fieldset>
+                            required autoFocus
+                            type="text"
+                            className="form-control"
+                            placeholder="Image Address?"
+                        />
+                    </div>
+                </fieldset>
 
-            <fieldset>
-                <div className="form-group">
-                    <label htmlFor="description">Brand:</label>
-                    <input
-                        value={piece.brand}
-                        onChange={
-                            (evt) => {
-                                const copy = { ...piece }
-                                copy.brand = evt.target.value
-                                setPiece(copy)
+                <fieldset className="registerSec">
+                    <div className="form-group">
+                        <label htmlFor="description">Brand:</label>
+                        <input
+                            value={piece.brand}
+                            onChange={
+                                (evt) => {
+                                    const copy = { ...piece }
+                                    copy.brand = evt.target.value
+                                    setPiece(copy)
+                                }
                             }
-                        }
-                        required autoFocus
-                        type="text"
-                        className="form-control"
+                            required autoFocus
+                            type="text"
+                            className="form-control"
 
-                    />
-                </div>
+                        />
+                    </div>
 
-            </fieldset>
-            <fieldset>
-                <div className="form-group">
-                    <label htmlFor="description">Price:</label>
-                    <input
-                        value={piece.price}
-                        onChange={
-                            (evt) => {
-                                const copy = { ...piece }
-                                copy.price = evt.target.value
-                                setPiece(copy)
+                </fieldset>
+                <fieldset className="registerSec">
+                    <div className="form-group">
+                        <label htmlFor="description">Price:</label>
+                        <input
+                            value={piece.price}
+                            onChange={
+                                (evt) => {
+                                    const copy = { ...piece }
+                                    copy.price = evt.target.value
+                                    setPiece(copy)
+                                }
                             }
-                        }
-                        required autoFocus
-                        type="text"
-                        className="form-control"
+                            required autoFocus
+                            type="text"
+                            className="form-control"
 
-                    />
-                </div>
+                        />
+                    </div>
 
-            </fieldset>
-            <fieldset>
-                <div className="form-group">
-                    <label htmlFor="description">Purchase Link:</label>
-                    <input
-                        value={piece.purchaseLink}
-                        onChange={
-                            (evt) => {
-                                const copy = { ...piece }
-                                copy.purchaseLink = evt.target.value
-                                setPiece(copy)
+                </fieldset>
+                <fieldset className="registerSec">
+                    <div className="form-group">
+                        <label htmlFor="description">Purchase Link:</label>
+                        <input
+                            value={piece.purchaseLink}
+                            onChange={
+                                (evt) => {
+                                    const copy = { ...piece }
+                                    copy.purchaseLink = evt.target.value
+                                    setPiece(copy)
+                                }
                             }
-                        }
-                        required autoFocus
-                        type="text"
-                        className="form-control"
+                            required autoFocus
+                            type="text"
+                            className="form-control"
 
-                    />
+                        />
+                    </div>
+
+                </fieldset>
+                <fieldset className="registerSec">
+                    <div className="form-group">
+                        <label htmlFor="pieceType">Type</label>
+                        <select
+                            required autoFocus
+                            type="text"
+                            className="form-control"
+                            value={piece.pieceTypeId}
+                            onChange={
+                                (evt) => {
+                                    const copy = { ...piece }
+                                    copy.pieceTypeId = evt.target.value
+                                    setPiece(copy)
+                                }
+
+                            }>
+                            <option value="0">Item Category...</option>
+                            {types.map(pieceType => <option value={pieceType.id}>{pieceType.type}</option>)}
+                        </select>
+
+
+
+
+                    </div>
+                </fieldset>
+
+
+                <div className="wrap">
+                    <button onClick={UpdatePiece} className="btn btn-primary">
+                        Save Piece!
+                    </button>
                 </div>
-
-            </fieldset>
-            <fieldset>
-                <div className="form-group">
-                    <label htmlFor="pieceType">Type</label>
-                    <select
-                        required autoFocus
-                        type="text"
-                        className="form-control"
-                        value={piece.pieceTypeId}
-                        onChange={
-                            (evt) => {
-                                const copy = { ...piece }
-                                copy.pieceTypeId = evt.target.value
-                                setPiece(copy)
-                            }
-
-                        }>
-                        <option value="0">Item Category...</option>
-                        {types.map(pieceType => <option value={pieceType.id}>{pieceType.type}</option>)}
-                    </select>
-
-
-
-
-                </div>
-            </fieldset>
-
-
-
-            <button onClick={UpdatePiece} className="btn btn-primary">
-                Save Piece!
-            </button>
-        </form>
+            </form>
+        </div>
     )
 }
