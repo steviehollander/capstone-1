@@ -21,7 +21,7 @@ export const WorldCloset = () => {
 
     useEffect(
         () => {
-            fetch("http://localhost:8088/pieces")
+            fetch("https://capstone-1-api-nw5wj.ondigitalocean.app/pieces")
                 .then(res => res.json())
                 .then((data) => {
                     //getting data back from API and passing to the stter
@@ -68,7 +68,7 @@ export const WorldCloset = () => {
 
     useEffect(
         () => {
-            fetch("http://localhost:8088/pieceTypes")
+            fetch("hhttps://capstone-1-api-nw5wj.ondigitalocean.app/pieceTypes")
                 .then(res => res.json())
                 .then((data) => {
                     //getting data back from API and passing to the stter

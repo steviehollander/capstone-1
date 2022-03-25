@@ -19,7 +19,7 @@ export const DreamCloset = () => {
     // Use state is a function that creates a variable for you
     const history = useHistory()
     const updateItemList = () => {
-        fetch(`http://localhost:8088/closets?userId=${localStorage.getItem("cm_user")}&_embed=pieces&closetTypeId=2`)
+        fetch(`https://capstone-1-api-nw5wj.ondigitalocean.app/closets?userId=${localStorage.getItem("cm_user")}&_embed=pieces&closetTypeId=2`)
             .then(res => res.json())
             .then((data) => {
                 //getting data back from API and passing to the stter
@@ -65,7 +65,7 @@ export const DreamCloset = () => {
 
     useEffect(
         () => {
-            fetch("http://localhost:8088/pieceTypes")
+            fetch("https://capstone-1-api-nw5wj.ondigitalocean.app/pieceTypes")
                 .then(res => res.json())
                 .then((data) => {
                     //getting data back from API and passing to the stter
@@ -80,7 +80,7 @@ export const DreamCloset = () => {
 
 
     const deleteItem = (id) => {
-        fetch(`http://localhost:8088/pieces/${id}`, {
+        fetch(`https://capstone-1-api-nw5wj.ondigitalocean.app/pieces/${id}`, {
             method: "DELETE"
         })
             .then(() => { updateItemList() })

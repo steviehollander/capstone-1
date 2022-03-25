@@ -16,7 +16,7 @@ export const AddPiece = () => {
 
     useEffect(
         () => {
-            fetch("http://localhost:8088/pieceTypes")
+            fetch("https://capstone-1-api-nw5wj.ondigitalocean.app/pieceTypes")
                 .then(res => res.json())
                 .then((data) => {
                     //getting data back from API and passing to the stter
@@ -29,7 +29,7 @@ export const AddPiece = () => {
 
     useEffect(
         () => {
-            fetch(`http://localhost:8088/closets/${closetId}`)
+            fetch(`https://capstone-1-api-nw5wj.ondigitalocean.app/closets/${closetId}`)
                 .then(res => res.json())
                 .then((data) => {
                     //getting data back from API and passing to the stter
@@ -74,7 +74,7 @@ export const AddPiece = () => {
             body: JSON.stringify(newPiece)
         }
 
-        return fetch("http://localhost:8088/pieces?_expand=closet", fetchOption)
+        return fetch("https://capstone-1-api-nw5wj.ondigitalocean.app/pieces?_expand=closet", fetchOption)
 
             .then((data) => {
                 if (closet.closetTypeId === 1) {

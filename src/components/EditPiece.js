@@ -20,11 +20,11 @@ export const EditPiece = () => {
 
     useEffect(
         () => {
-            return fetch(`http://localhost:8088/pieces/${pieceId}`)
+            return fetch(`https://capstone-1-api-nw5wj.ondigitalocean.app/pieces/${pieceId}`)
                 .then(response => response.json())
                 .then((data) => {
                     setPiece(data)
-                    fetch(`http://localhost:8088/closets/${data.closetId}`)
+                    fetch(`https://capstone-1-api-nw5wj.ondigitalocean.app/closets/${data.closetId}`)
                         .then(res => res.json())
                         .then((data) => {
                             //getting data back from API and passing to the stter
@@ -42,7 +42,7 @@ export const EditPiece = () => {
 
     useEffect(
         () => {
-            fetch("http://localhost:8088/pieceTypes")
+            fetch("https://capstone-1-api-nw5wj.ondigitalocean.app/pieceTypes")
                 .then(res => res.json())
                 .then((data) => {
                     //getting data back from API and passing to the stter
@@ -73,7 +73,7 @@ export const EditPiece = () => {
 
 
 
-        return fetch(`http://localhost:8088/pieces/${pieceId}`, {
+        return fetch(`https://capstone-1-api-nw5wj.ondigitalocean.app/pieces/${pieceId}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"

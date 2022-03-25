@@ -2,12 +2,18 @@ import React from "react"
 import { Link } from "react-router-dom"
 import "./NavBar.css"
 import LogoImg from "../../images/MainLogo.jpg"
+import GraphicImg from "../../images/graphic.PNG"
 
 export const NavBar = (props) => {
     return (
         <>
             <div className="TheTop">
+
+
+
                 <img class="MainLogo" src={LogoImg} alt="" />
+
+
 
                 <ul className="navbar">
 
