@@ -42,7 +42,7 @@ export const Register = (props) => {
                                         "Content-Type": "application/json"
                                     },
                                     body: JSON.stringify({ userId: createdUser.id, closetTypeId: 2 })
-                                })).then(() => history.push("/"))
+                                })).then(() => history.push("/home"))
                             }
                         })
                 }
