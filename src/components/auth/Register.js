@@ -10,7 +10,7 @@ export const Register = (props) => {
     const history = useHistory()
 
     const existingUserCheck = () => {
-        return fetch(`http://localhost:8088/users?email=${user.email}`)
+        return fetch(`https://capstone-1-api-nw5wj.ondigitalocean.app/users?email=${user.email}`)
             .then(res => res.json())
             .then(user => !!user.length)
     }
@@ -19,7 +19,7 @@ export const Register = (props) => {
         existingUserCheck()
             .then((userExists) => {
                 if (!userExists) {
-                    fetch("http://localhost:8088/users", {
+                    fetch("https://capstone-1-api-nw5wj.ondigitalocean.app/users", {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json"
@@ -30,13 +30,13 @@ export const Register = (props) => {
                         .then(createdUser => {
                             if (createdUser.hasOwnProperty("id")) {
                                 localStorage.setItem("cm_user", createdUser.id)
-                                fetch("http://localhost:8088/closets", {
+                                fetch("https://capstone-1-api-nw5wj.ondigitalocean.app/closets", {
                                     method: "POST",
                                     headers: {
                                         "Content-Type": "application/json"
                                     },
                                     body: JSON.stringify({ userId: createdUser.id, closetTypeId: 1 })
-                                }).then(() => fetch("http://localhost:8088/closets", {
+                                }).then(() => fetch("https://capstone-1-api-nw5wj.ondigitalocean.app/closets", {
                                     method: "POST",
                                     headers: {
                                         "Content-Type": "application/json"
