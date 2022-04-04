@@ -5,8 +5,8 @@ This app saves clothing items from any online retailer and sorts them in one of 
 https://drive.google.com/file/d/1HkHxMnMRYe1wUkwMzjaKXzCWdtNR-YuD/view?usp=sharing
 
 ## Technoligies Used
-
-![image](https://user-images.githubusercontent.com/96503963/161581398-4ca4c1ab-699c-4b1e-b2fc-110a31af4dd5.png)
+![image] (https://cdn.worldvectorlogo.com/logos/javascript-1.svg)
+![image] (https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png)
 ![image](https://user-images.githubusercontent.com/96503963/161581540-ddfd2742-94ba-4689-932f-8d46241d1315.png)
 ![image](https://user-images.githubusercontent.com/96503963/161581691-ce2032bc-6b86-431f-a742-4d46428f0f76.png)
 
