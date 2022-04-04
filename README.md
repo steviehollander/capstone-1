@@ -1,7 +1,8 @@
 ## Clothes-Minded
 This app saves clothing items from any online retailer and sorts them in one of two virtual "closets" chosen by the user. You can edit items you've saved as well as delete them. Each saved items containes a link to purchase. The app also displays all the items every user has saved in the "Our Closet" database, along with purchase links to each item. 
 
-
+## Tutorial 
+https://drive.google.com/file/d/1HkHxMnMRYe1wUkwMzjaKXzCWdtNR-YuD/view?usp=sharing
 
 ## Technoligies Used
 
