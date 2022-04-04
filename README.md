@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+## Clothes-Minded
+This app saves clothing items from any online retailer and sorts them in one of two virtual "closets" chosen by the user. You can edit items you've saved as well as delete them. Each saved items containes a link to purchase. The app also displays all the items every user has saved in the "Our Closet" database, along with purchase links to each item. 
+
+
+
+## Technoligies Used
+
+![image](https://user-images.githubusercontent.com/96503963/161581398-4ca4c1ab-699c-4b1e-b2fc-110a31af4dd5.png)
+
 
 
 
@@ -18,6 +26,9 @@ You may also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+
+
 
 ### `npm run build`
 
