@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+## Clothes-Minded
+This app saves clothing items from any online retailer and sorts them in one of two virtual "closets" chosen by the user. You can edit items you've saved as well as delete them. Each saved items containes a link to purchase. The app also displays all the items every user has saved in the "Our Closet" database, along with purchase links to each item. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Tutorial 
+https://drive.google.com/file/d/1HkHxMnMRYe1wUkwMzjaKXzCWdtNR-YuD/view?usp=sharing
 
-## Available Scripts
+## Technoligies Used
 
-In the project directory, you can run:
+![image](https://user-images.githubusercontent.com/96503963/161581398-4ca4c1ab-699c-4b1e-b2fc-110a31af4dd5.png)
+![image](https://user-images.githubusercontent.com/96503963/161581540-ddfd2742-94ba-4689-932f-8d46241d1315.png)
+![image](https://user-images.githubusercontent.com/96503963/161581691-ce2032bc-6b86-431f-a742-4d46428f0f76.png)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Instalation 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+From your terminal run: git clone git@github.com:steviehollander/capstone-1.git
 
-### `npm test`
+In the project directory, run: npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clone down the API as well! run: git clone git@github.com:steviehollander/capstone-1-api.git
 
-### `npm run build`
+In the project directory, run: json-server database.json -p 8088 -w
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Visit Local Host
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## ERD
+<img width="704" alt="Screen Shot 2022-04-04 at 9 40 16 AM" src="https://user-images.githubusercontent.com/96503963/161575104-522adb44-c893-4ba9-8884-404f6adb308a.png">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Wire Frame! 
+<img width="449" alt="Screen Shot 2022-04-04 at 10 18 04 AM" src="https://user-images.githubusercontent.com/96503963/161576194-39f13c68-9e7c-44f3-99c8-d35455d9a441.png">
+<img width="464" alt="Screen Shot 2022-04-04 at 10 19 27 AM" src="https://user-images.githubusercontent.com/96503963/161576809-a9ae373c-f81f-4753-b38a-c533c555fa89.png">
+<img width="457" alt="Screen Shot 2022-04-04 at 10 22 17 AM" src="https://user-images.githubusercontent.com/96503963/161577191-4b0cdd6c-4237-40f8-b56e-b42e1b3116de.png">
+<img width="457" alt="Screen Shot 2022-04-04 at 10 23 12 AM" src="https://user-images.githubusercontent.com/96503963/161577351-e235d306-b512-4176-afbf-13b9f0da5af7.png">
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
