@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
@@ -45,26 +45,12 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## ERD
+<img width="704" alt="Screen Shot 2022-04-04 at 9 40 16 AM" src="https://user-images.githubusercontent.com/96503963/161575104-522adb44-c893-4ba9-8884-404f6adb308a.png">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Wire Frame! [IMG_7572](https://user-images.githubusercontent.com/96503963/161575509-e51c223c-def9-42bf-9a92-6686c7a41c90.jpg)
+[IMG_7575](https://user-images.githubusercontent.com/96503963/161575562-b8ccf6cb-6339-4ca6-93b0-725df0ebad1b.jpg)
+[IMG_7576](https://user-images.githubusercontent.com/96503963/161575672-74a2dd52-7693-46f5-bb75-09aa7211ae9f.jpg)
+[IMG_7579](https://user-images.githubusercontent.com/96503963/161575777-31641625-8a72-450e-8cee-fb7891a7de8c.jpg)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
