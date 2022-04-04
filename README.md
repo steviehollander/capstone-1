@@ -6,9 +6,9 @@ https://drive.google.com/file/d/1HkHxMnMRYe1wUkwMzjaKXzCWdtNR-YuD/view?usp=shari
 
 ## Technoligies Used
 
+JavaScript, React, Visual Studio Code, Github
 
-![image](https://user-images.githubusercontent.com/96503963/161581540-ddfd2742-94ba-4689-932f-8d46241d1315.png)
-![image](https://user-images.githubusercontent.com/96503963/161581691-ce2032bc-6b86-431f-a742-4d46428f0f76.png)
+
 
 
 ## Instalation 
