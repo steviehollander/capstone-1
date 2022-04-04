@@ -13,11 +13,16 @@ https://drive.google.com/file/d/1HkHxMnMRYe1wUkwMzjaKXzCWdtNR-YuD/view?usp=shari
 
 ## Instalation 
 
-From your terminal run git clone git@github.com:steviehollander/capstone-1.git
+From your terminal run: git clone git@github.com:steviehollander/capstone-1.git
 
-run npm start
+In the project directory, run: npm start
 
-(Make sure to install my capstone-1-api for application to work properly)
+Clone down the API as well! run: git clone git@github.com:steviehollander/capstone-1-api.git
+
+In the project directory, run: json-server database.json -p 8088 -w
+
+Visit Local Host
+
 
 
 
